@@ -9,34 +9,22 @@ We use datasets in our experiments:
 (3)DarkGaussian:https://pan.baidu.com/share/init?surl=xmZqYEJ5ZMkdldPS9_MgiQ&pwd=jf48
 ## Dataset format
 
-    BLENDER DATASETS      
-    │─── 1.jpg
-    │─── 2.jpg
-    │─── 3.jpg
-    │─── ......
-    │─── ****.json
-    
-    REAL-WORLD DATASETS    
-    │─── images
-         │─── 1.png
-         │─── 2.png
-         │─── ......
-    │─── sparse
-    │─── poses_bounds.npy
-
-
+    datasets      
+    │─── datasets-name
+        │─── train
+            │─── clear
+                │─── 1.jpg
+            │─── haze
+        │─── test
+            │─── clear
+            │─── haze
 
 
 # Environment
-This experiment uses the Ubuntu 20.04 operating system, with Python 3.8 and PyTorch 2.0.0 installed, and is configured with CUDA 11.8 to support GPU acceleration. A single NVIDIA RTX 3090 graphics card is utilized in the experiment.
+Python 3.10 and PyTorch 2.2.2 installed, and is configured with CUDA 12.6 to support GPU acceleration. A single NVIDIA RTX 4090 graphics card is utilized in the experiment.
 <br/>
 ## Enviroment setup:
 ```
-$ git clone https://github.com/Willamare/OeCNeRF.git
-$ cd OeCNeRF
-$ conda create -n OeCNeRF -c anaconda python=3.8
-$ conda activate OeCNeR
-$ conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 cudatoolkit=11.7 -c pytorch
 $ pip3 install -r requirements.txt
 ```
 
@@ -45,21 +33,4 @@ $ pip3 install -r requirements.txt
 <br/>
 
 # Running
-```bash
-# running
-sh train_render.sh
-
-All the experiment results and checkpoints will be saved to the 'exp/' directory:
-exp   
-└─── llff   
-      └─── AMEbike
-              └─── checkpoints
-              └─── test_vis
-              └─── config.gin
-              └─── log_train.txt
-     └─── AMEbuu
-              └─── ......
-              └─── ......
-     └─── ......
-```
-For synthetic datasets, create custom training and testing sets. For real-world datasets, select every 8th image as the testing set, with the remaining images used for the training set.
+python Train.py
