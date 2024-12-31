@@ -1,0 +1,17 @@
+data:
+    dataset: "Dehaze"
+    image_size: 256
+    channels: 3
+    num_workers: 8
+    data_dir: "/datasets/Dehaze/IO"
+    conditional: True
+
+training:
+    batch_size: 1
+    val_batch_size: 1
+    patch_n: 16
+    n_epochs: 1
+    n_iters: 2000000
+    snapshot_freq: 10000
+    validation_freq: 10000
+
