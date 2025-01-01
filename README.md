@@ -2,11 +2,10 @@
 # Dataset
 We use datasets in our experiments:
 
-(1)LOM:https://drive.google.com/file/d/1orgKEGApjwCm6G8xaupwHKxMbT2s9IAG/view
+(1)RESIDE:[click here..](https://sites.google.com/view/reside-dehaze-datasets/reside-standard?authuser=0)
 
-(2)LLNeRF:https://drive.google.com/drive/folders/1h-u8DkvuaIvcHZihYIWcqwpURiM32_u3
+(2)BeDDE:[click here..](https://github.com/xiaofeng94/BeDDE-for-defogging)
 
-(3)DarkGaussian:https://pan.baidu.com/share/init?surl=xmZqYEJ5ZMkdldPS9_MgiQ&pwd=jf48
 ## Dataset format
 
     datasets      
